@@ -18,7 +18,6 @@ body{
     border-left: var(--weight-loader) solid var(--color-rotate);
     border-radius: 50%;
     animation: loader var(--speed-rotate) linear infinite;
-
 }
 
 @keyframes loader {

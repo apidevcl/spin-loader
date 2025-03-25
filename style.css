@@ -1,0 +1,28 @@
+:root{
+    --size-loader: 50px;
+    --weight-loader: 6px;
+    --color-bg: #16500e3a;
+    --color-rotate: #0d300c;
+    --speed-rotate: 1s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spinner{
+    width: var(--size-loader);
+    height: var(--size-loader);
+    border: var(--weight-loader) solid var(--color-bg);
+    border-left: var(--weight-loader) solid var(--color-rotate);
+    border-radius: 50%;
+    animation: loader var(--speed-rotate) linear infinite;
+
+}
+
+@keyframes loader {
+    100%{
+        transform: rotate(360deg);
+    }
+}
